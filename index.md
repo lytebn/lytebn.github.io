@@ -49,7 +49,7 @@
 
 **Bash for extracting 999 files:** `for i in $(seq 999 -1 0); do tar -xvf "$i.tar"; done`
 
-**Converts many files names from base64** `**for file in $(ls); do mv "$file" "$(echo $file | base64 -d)"; done**`
+**Converts many files names from base64** `for file in $(ls); do mv "$file" "$(echo $file | base64 -d)"; done`
 
 
 
