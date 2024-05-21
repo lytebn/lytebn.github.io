@@ -20,19 +20,19 @@
 # Commands
 ## [list of most used commands](https://dvd848.github.io/CTFs/CheatSheet.html)
 
-**exiftool :** usage exiftool image.jpg | | shows details of image
+**exiftool :** usage `exiftool image.jpg` | | shows details of image
 
-**strings :** usage strings image.jpg | shows strings in image
+**strings :** usage `strings image.jpg` | shows strings in image
 
-**steghide :** usage steghide --extract -sf image.jpg | shows stegno in image
+**steghide :** usage `steghide --extract -sf image.jpg` | shows stegno in image
 
-**binwalk :** usage binwalk -e image.jpg | shows files in image | binwalk --dd='.*' [filename]
+**binwalk :** usage `binwalk -e image.jpg` | shows files in image | `binwalk --dd='.*' [filename]`
 
-**file :** usage file image.jpg | shows info and type of file
+**file :** usage `file image.jpg` | shows info and type of file
 
-**grep:** find in strings or anything (first command | grep “string" 
+**grep:** find in strings or anything (first command `| grep “string"` 
 
-**zsteg:** usage (zsteg -a image.png) + (| grep -i “flag”)
+**zsteg:** usage `(zsteg -a image.png)` + `| grep -i “flag”)`
 
 **stegsolve:** GUI tool to find things in images
 
@@ -45,11 +45,6 @@
 
 ## Books
 
-[CTF Wiki](https://ctf-wiki.mahaloz.re/)
-[CTF Playbook](https://fareedfauzi.gitbook.io/ctf-playbook)
+ 1. [CTF Wiki](https://ctf-wiki.mahaloz.re/)
+ 2. [CTF Playbook](https://fareedfauzi.gitbook.io/ctf-playbook)
 
-## Update a publication
-
-After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.
-
-> **Note:** The **Publish now** button is disabled if your file has not been published yet.
