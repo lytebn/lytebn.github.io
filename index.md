@@ -2,6 +2,7 @@
 
 
 
+
    [Tools](#Tools) | [Commands](#Commands) | [Books](#Books) | [Useful Code](#Useful_code)
 
 
@@ -36,6 +37,22 @@
 
 **stegsolve:** GUI tool to find things in images
 
+**Ocr:** `tesseract image.file.jpg text-file-name`
+
+**Open files:** `xdg-open report.pdf`
+
+**Extract strings from image:**  `strings image.png > textfile.txt`
+
+**Compare 2 text files:** `diff file1.txt file2.txt`
+
+**qr reader:** zbar tools `zbarimg image.png`
+
+**Bash for extracting 999 files:** `for i in $(seq 999 -1 0); do tar -xvf "$i.tar"; done`
+
+**Converts many files names from base64** `**for file in $(ls); do mv "$file" "$(echo $file | base64 -d)"; done**`
+
+
+
 > If a file without extension happen to be image after exiftool research the image extension and compare hex code of the header to find the cause of corruption.
 > 
 >  if no results try [this](https://stylesuxx.github.io/steganography/) on images.
@@ -50,3 +67,16 @@
 
 
 ## Useful code
+**Script that solves binary empty space encoding:**
+
+    import sys
+    	    
+    input_file = sys.argv[1]    
+    output_file = "output.txt"
+                  
+    with open(input_file, 'r') as infile:
+    	with open(output_file, 'w') as outfile:
+    		for line in file:
+    			replaced_line = line.replace('\t', '1').replace(' ', '0')
+    			outfile.write(replaced_line)
+    print(f"{output_file}")
